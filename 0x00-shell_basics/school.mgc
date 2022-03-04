@@ -1,1 +1,2 @@
- file -C -m 0 String SCHOOL school.mgc
+#!/bin/bash 
+file -C -m 0 String SCHOOL school.mgc

@@ -1,1 +1,2 @@
-ls -a -l /boot/home/vagrant
+#!/bin/bash
+ls -la  .. /boot
