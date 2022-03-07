@@ -1,2 +1,2 @@
 #!/bin/bash
-grep username etc/passwd
+cut -f 1,6 -d ':' /etc/passwd | sort

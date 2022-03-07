@@ -1,2 +1,2 @@
 #!/bin/bash
-sort uniq < list >13-unique| fmt -w 1
+sort | uniq -u

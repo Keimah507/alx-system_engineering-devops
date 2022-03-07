@@ -1,2 +1,2 @@
 #!/bin/bash
-cat etc/passwd|grep !"bin" |fmt |lpr
+grep -v "bin" /etc/passwd
