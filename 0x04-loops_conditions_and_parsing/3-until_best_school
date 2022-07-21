@@ -1,4 +1,4 @@
-#!/ussr/bin/env bash
+#!/usr/bin/env bash
 #displays "Best School" ten times
 
 COUNTER=10
