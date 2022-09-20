@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+scp ubuntu@18.232.38.189 usr/root/somefile.html
