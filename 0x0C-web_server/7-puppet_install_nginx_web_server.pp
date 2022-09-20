@@ -1,4 +1,3 @@
-#!/usr/bin/ env bash
 # installs nginx using puppet
 package { 'nginx':
 ensure => installed,
