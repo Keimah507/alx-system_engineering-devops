@@ -1,2 +1,10 @@
 #!/usr/bin/env bash
-scp ubuntu@18.232.38.189 usr/root/somefile.html
+#transferss a file from our client to a server
+args=("$@")
+if [[ $# -lt 3 ]];then
+	echo "Usage: 0-transfer_file PATH-TO-FILE IP USERNAME PATH_TO_SSH-KEY"
+elif [[ $# -lt 4 ]];then
+	scp -o StrictHostKeyChecking=no ${args[0]} ${args[2]}@${args[3]}:~/
+else
+	scp  -i ${args[3]} -o StrictHostKeyChecking=no ${args[0]} ${args[2]}@${args[1]}:~/
+fi
