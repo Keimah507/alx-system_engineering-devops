@@ -17,5 +17,5 @@ content => 'Hello World!',
 
 service { 'nginx':
 ensure  => running,
-require => Package['nginx],
+require => Package['nginx'],
 }
