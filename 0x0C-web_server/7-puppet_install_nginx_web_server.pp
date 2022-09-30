@@ -1,6 +1,7 @@
 #installs package nginx
+
 package { 'nginx':
-ensure => installed,
+ensure => 'installed',
 }
 
 file_line { 'append line to nginx default config':
@@ -15,5 +16,5 @@ content => 'Hello World',
 
 service { 'nginx':
 ensure  => running,
-require => package['nginx'],
+require => Package['nginx'],
 }
