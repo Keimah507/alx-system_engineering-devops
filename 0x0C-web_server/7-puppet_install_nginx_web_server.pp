@@ -12,7 +12,7 @@ line   => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 per
 }
 
 file { '/var/www/html/index.html':
-content => 'Hello World',
+content => 'Hello World!',
 }
 
 service { 'nginx':
